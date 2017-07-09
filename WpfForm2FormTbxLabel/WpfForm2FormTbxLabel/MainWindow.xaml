@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfForm2FormTbxLabel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfForm2FormTbxLabel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="btn1" Content="Say What!!!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="209" RenderTransformOrigin="2.979,12.245" Margin="204,197,0,0" Click="button_Click"/>
+        <Label x:Name="lbl1" Content="" HorizontalAlignment="Left" Margin="236,283,0,0" VerticalAlignment="Top" Width="143"/>
+        <TextBox x:Name="tBox1" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" Margin="236,114,0,0" ToolTip="First Textbox on the page!!!"/>
+        <Label x:Name="tbxLbl" Content="Enter Your Name" HorizontalAlignment="Left" Margin="32,114,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.021,-0.561" Width="164" FontSize="18" FontFamily="Bauhaus 93"/>
+        <Button x:Name="button" Content="Warp Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="209" Margin="204,245,0,0" Click="button_Click_1"/>
+
+    </Grid>
+</Window>

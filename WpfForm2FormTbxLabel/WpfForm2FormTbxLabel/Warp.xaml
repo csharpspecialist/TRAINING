@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfForm2FormTbxLabel.Warp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfForm2FormTbxLabel"
+        mc:Ignorable="d"
+        Title="Warp" Height="400" Width="400">
+    <Grid Margin="0,0,-80,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="Pics/zzSpace.jpg"/>
+        </Grid.Background>
+        <Label x:Name="label" Content="Wish You Were Here" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="139,49,0,0" Width="247" FontSize="24" Foreground="#FFF5EB1A"/>
+        <Label x:Name="label1" Content="There is Life Out Here!!!!" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="139,256,0,0" Width="247" FontSize="24" Foreground="#FFE80E0E"/>
+
+    </Grid>
+</Window>
