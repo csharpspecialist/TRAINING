@@ -31,7 +31,8 @@ namespace HelloDemo
 
             //int 5a = 10;
             //  5 int = x;
-
+            int x = 5,  d =6;
+            int b = 10;
 
         }
         
