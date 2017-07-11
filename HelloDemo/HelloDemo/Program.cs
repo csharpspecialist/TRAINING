@@ -30,7 +30,6 @@ namespace HelloDemo
             Write("today");
             ReadKey();
 
-
             //local variables 
             // local scope
 
@@ -45,10 +44,8 @@ namespace HelloDemo
             NewMethod();
             np.Multiply();
 
-
             
         }
-
 
 
         public static void NewMethod()
@@ -81,8 +78,7 @@ namespace HelloDemo
             Console.WriteLine("Class is fun!!!!");
             ReadLine();
         }
-
-
+        
         
     }
 
