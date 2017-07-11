@@ -9,9 +9,11 @@ namespace HelloDemo
 {
     class Program
     {
-        static void Main(string[] args)
-        {
 
+        int smog = 5;
+        static void Main()
+        {
+             
             Console.WriteLine("Hello World");
             //Console.ReadKey();
 
@@ -34,7 +36,46 @@ namespace HelloDemo
             int x = 5,  d =6;
             int b = 10;
 
+            Worker();
+            Nice(); //no instance here to call this method
+            Gamer();
+            Complete();
+
+            
+            
         }
+
+        public void Gamer()
+        {
+            Console.WriteLine($"we don't like {smog}");
+        }
+
+
+
+        public static void Nice()
+        {  // have to create an instance for this to work
+            Program p = new Program();
+
+            Console.WriteLine($"we don't like {p.smog}");
+
+
+        }
+
+        public static void Worker()
+        {
+
+
+        }
+
+        public int Complete()
+        {
+
+            int nice = 4;
+            return nice;
+
+
+        }
+
         
     }
 }
