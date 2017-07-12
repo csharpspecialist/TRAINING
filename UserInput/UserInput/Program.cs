@@ -28,6 +28,7 @@ namespace UserInput
             Console.WriteLine("R U going out tonight:");
             string goingOut = Console.ReadLine();
 
+
             //  string interpolation 
             Console.WriteLine($"My name is {userName} I am {age} and {goingOut} of course");
             Console.ReadLine();
