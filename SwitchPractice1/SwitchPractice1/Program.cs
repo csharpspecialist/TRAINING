@@ -42,12 +42,7 @@ namespace SwitchPractice1
             string doctorV = Console.ReadLine();
             int.TryParse(doctorV, out realVisit);  //exits program w/o blowing up!!
 
-            switch (realVisit)
-            {
-                case 3:
-                    Console.WriteLine("Work is being done here!!!!");
-                    break;
-
+        
             }
 
 
