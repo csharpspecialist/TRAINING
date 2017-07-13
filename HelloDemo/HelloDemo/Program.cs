@@ -40,9 +40,11 @@ namespace HelloDemo
             int e;
            string blaxe;
             string cry = "";
-            Dream();
-            NewMethod();
-            np.Multiply();
+            //Dream();
+            //NewMethod();
+            //np.Multiply();
+            NewProgram newp = new NewProgram();
+            newp.Casing();
 
             
         }
@@ -85,6 +87,23 @@ namespace HelloDemo
     class NewProgram
     {
         
+        public void Casing()
+        {
+            int realVisit;
+            Console.WriteLine("How many times have you seen the doctor this year");
+            //int docVist = Convert.ToInt32(Console.ReadLine());  //can blow up
+            int dVisit = int.Parse(Console.ReadLine());
+            string doctorV = Console.ReadLine();
+            int.TryParse(doctorV, out realVisit);
+
+            //switch(realVisit)
+            //{
+            //    case 3:
+            //        Console.WriteLine("Work is being done here!!!!");
+            //        break;
+
+            //}
+        }
 
 
 
