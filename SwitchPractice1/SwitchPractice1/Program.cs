@@ -9,7 +9,7 @@ namespace SwitchPractice1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("What is your favorite color");
             string color = Console.ReadLine().ToLower();
@@ -74,6 +74,9 @@ namespace SwitchPractice1
             }
             Console.WriteLine("We broke out of the switch statement!!");
             Console.ReadLine();
+
+
+
         }
         
         public static void Parsing()
