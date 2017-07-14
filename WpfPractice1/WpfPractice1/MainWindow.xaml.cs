@@ -32,8 +32,7 @@ namespace WpfPractice1
             string words = txtBox1.Text;
             //txtBox1.Text = "Yesss!!!";
 
-            lblText.Content = words;
-            
+            lblText.Content = words;            
 
         }
 

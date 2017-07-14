@@ -11,6 +11,9 @@ namespace SwitchPractice1
     {
         static void Main()
         {
+
+            Parsing();
+
             Console.WriteLine("What is your favorite color");
             string color = Console.ReadLine().ToLower();
 
@@ -39,9 +42,6 @@ namespace SwitchPractice1
             Console.Write("We broke out of the loop");
             Console.ReadLine();
 
-
-
-
             bool yes;
             int foodLike = 0;
             Console.WriteLine("What's is your favorite pasta dish \n 1. Lasagne \n 2. Spaghetti \n 3. Ravioli");
@@ -54,9 +54,11 @@ namespace SwitchPractice1
 
             switch(foodLike)
             {
+               
                 case 1:
                 case 3: //demonstration of 2 cases in one statement
                     Console.WriteLine("Lasagne is fantastic!!!");
+
                     break;
 
                 case 2:
@@ -75,13 +77,13 @@ namespace SwitchPractice1
             Console.WriteLine("We broke out of the switch statement!!");
             Console.ReadLine();
 
-
+            
 
         }
         
         public static void Parsing()
         {
-            
+           
             int realVisit;
             Console.WriteLine("How many times have you seen the doctor this year");
             //int docVist = Convert.ToInt32(Console.ReadLine());  //can blow up
