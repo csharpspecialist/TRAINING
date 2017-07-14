@@ -45,16 +45,17 @@ namespace SwitchPractice1
             bool yes;
             int foodLike = 0;
             Console.WriteLine("What's is your favorite pasta dish \n 1. Lasagne \n 2. Spaghetti \n 3. Ravioli");
-             foodLike = Convert.ToInt32(ReadLine().ToUpper());
-            //string foodChoice = Console.ReadLine();
+             //foodLike = Convert.ToInt32(ReadLine().ToUpper());
+            string foodChoice = Console.ReadLine();
             
             //int foodChoice = int.Parse(ReadLine());
-           //int.TryParse(foodChoice, out foodLike);
+           int.TryParse(foodChoice, out foodLike);
            // double food = Convert.ToDouble(ReadLine().ToUpper());
 
             switch(foodLike)
             {
                 case 1:
+                case 3: //demonstration of 2 cases in one statement
                     Console.WriteLine("Lasagne is fantastic!!!");
                     break;
 
@@ -62,15 +63,13 @@ namespace SwitchPractice1
                     Console.WriteLine("Spaghetti is delicious");
                     break;
 
-                case 3:
+                case 4:
                     Console.WriteLine("Ravioli was invented by Chev Boyardi!!!");
                     break;
 
                 default:
                     Console.WriteLine("That's not a pasta choice we recognize");
                     break;
-
-
 
             }
             Console.WriteLine("We broke out of the switch statement!!");
@@ -88,15 +87,10 @@ namespace SwitchPractice1
             int.TryParse(doctorV, out realVisit);  //exits program w/o blowing up!!
 
         
-            }
-
-
         }
 
 
-
-
-
-
     }
-}
+          
+ }
+
