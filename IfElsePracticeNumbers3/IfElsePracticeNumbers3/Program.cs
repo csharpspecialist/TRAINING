@@ -35,8 +35,7 @@ namespace IfElsePracticeNumbers3
             }
 
             Console.ReadLine();
-            Console.WriteLine($"here is ${firstNum}");
-            Console.ReadLine();
+           
         }
     }
 }

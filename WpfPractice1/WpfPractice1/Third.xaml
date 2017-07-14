@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfPractice1.Third"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPractice1"
+        mc:Ignorable="d"
+        Title="Third" Height="300" Width="300">
+    <Grid>
+        <Label x:Name="label" Content="Form # 3" HorizontalAlignment="Left" Margin="94,107,0,0" VerticalAlignment="Top" Width="111" Height="41" FontSize="24"/>
+
+    </Grid>
+</Window>

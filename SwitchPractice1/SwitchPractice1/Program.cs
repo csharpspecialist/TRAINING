@@ -43,12 +43,13 @@ namespace SwitchPractice1
 
 
             bool yes;
-            int foodLike;
+            int foodLike = 0;
             Console.WriteLine("What's is your favorite pasta dish \n 1. Lasagne \n 2. Spaghetti \n 3. Ravioli");
-            //int foodChoice = Convert.ToInt32(ReadLine().ToUpper());
-            string foodChoice = Console.ReadLine();
+             foodLike = Convert.ToInt32(ReadLine().ToUpper());
+            //string foodChoice = Console.ReadLine();
+            
             //int foodChoice = int.Parse(ReadLine());
-           int.TryParse(foodChoice, out foodLike);
+           //int.TryParse(foodChoice, out foodLike);
            // double food = Convert.ToDouble(ReadLine().ToUpper());
 
             switch(foodLike)
