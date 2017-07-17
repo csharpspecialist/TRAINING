@@ -21,14 +21,22 @@ namespace SwitchMessageAndEnumPrac1
 
 
         }
-
-
-
-
+        
         static void Main(string[] args)
         {
+            //iterating thru enum using foreach loop
+            var values = Enum.GetValues(typeof(Burgers));
 
-          //showing how to use message first
+
+            foreach (var item in values)
+            {
+                Console.WriteLine(item);
+            }
+            Console.ReadLine();
+
+
+
+            //showing how to use message first
             string message;
             int flixShow = 0;
             Console.WriteLine("What's is your favorite Netflix  Show \n 1. GOT \n 2. Orange \n 3. Iron Fist \n 4. Luke Cage");          
@@ -171,9 +179,8 @@ namespace SwitchMessageAndEnumPrac1
                     break;
                 default:
                     break;
-            }
-
-
+            }   
+              
         }
    
     }
@@ -187,7 +194,6 @@ namespace SwitchMessageAndEnumPrac1
         Mummy
     }
 
-
     enum Burgers
     {
 
@@ -198,7 +204,8 @@ namespace SwitchMessageAndEnumPrac1
         Single,
         DoubleCheese
 
-
     }
+
+
 
 }
