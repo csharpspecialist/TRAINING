@@ -16,8 +16,6 @@ namespace EnumPractice2
     class Program
     {
 
-
-
         static void Main(string[] args)
         {
             int BChoice;
@@ -41,7 +39,6 @@ namespace EnumPractice2
             Console.ReadLine();
 
         }
-
         public static void Wendys()
         {
             Console.WriteLine("Wendys burgers are great");
