@@ -31,13 +31,22 @@ namespace LoopPractice2
                 Console.WriteLine($"The values of array nums is {(nums[n])}");
             }
             Console.ReadLine();
-
+            
             char[] letters = new char [] { 'v','i','n','c','e' };
            for(int m=0; m < letters.Length; ++m)
             {
                 Console.WriteLine($"The value of the letters array are {(letters[m])}");
+               
             }
             Console.ReadKey();
+
+            for (int m = 0; m < letters.Length; ++m)
+            {
+                Console.Write( (letters[m]));
+            }
+            Console.ReadKey();
+
+
         }
     }
 }
