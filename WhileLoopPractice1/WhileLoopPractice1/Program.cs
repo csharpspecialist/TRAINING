@@ -21,7 +21,7 @@ namespace WhileLoopPractice1
             string pw = Console.ReadLine();
                     
 
-            while (inputName == userName && pw == password)
+            while (inputName != userName || pw != password)
             {
                 Console.WriteLine($"The combination that you entered was not correct");
                 Console.WriteLine("Try again");
