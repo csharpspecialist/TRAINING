@@ -21,7 +21,7 @@ namespace GuessingGame
         {
             Console.WriteLine("Sandal & Atlantis are both here");
 
-            sm
+            
 
 
         }

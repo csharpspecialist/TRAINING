@@ -15,13 +15,14 @@ namespace GuessingGame
             // Random rnd = new Random();
             Vacation v = new Vacation();
             Console.WriteLine("Hello world");
-
+            v.Cancun();
             p.Working();
            Talking();
-
-            v.Bahamas();
             v.Cancun();
+            v.Bahamas();
+         
             v.Nice();
+            v.Cancun();
             Console.WriteLine("I'm Baaaack in the main method!!!!");
             Console.ReadKey();
         }

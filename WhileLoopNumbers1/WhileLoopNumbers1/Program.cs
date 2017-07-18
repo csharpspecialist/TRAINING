@@ -10,7 +10,6 @@ namespace WhileLoopNumbers1
     {
         static void Main(string[] args)
         {
-
             int idNum;
             int lowNum = 1000;
             int highNum = 2000;
@@ -18,7 +17,6 @@ namespace WhileLoopNumbers1
             Console.WriteLine("Enter a valid Id Number");
             string valNum = Console.ReadLine();
             int.TryParse(valNum, out idNum);
-
 
             while(idNum < lowNum || idNum > highNum)
             {
