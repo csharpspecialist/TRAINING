@@ -20,13 +20,12 @@ namespace GuessingGame
         public void Bahamas()
         {
             Console.WriteLine("Sandal & Atlantis are both here");
-
-            
+                       
 
 
         }
 
-        public  void Nice()
+        public void Nice()
         {
             Console.WriteLine("Have a nice day!!");
         }
