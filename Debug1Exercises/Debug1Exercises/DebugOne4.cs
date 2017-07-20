@@ -3,14 +3,14 @@
 using static System.Console;
 class DebugOne4
 {
-   static void Main
+   static void Main()
    {
-      Console.WriteLine("Spinach dip:");
+      WriteLine("Spinach dip:");
       WriteLine();
-      WriteLine"1 package frozen chopped spinach");
-      WriteLine("1 cup mayonaise");
+      WriteLine("1 package frozen chopped spinach");
+      WriteLine("1 cup mayonnaise");
       WriteLine("1 chopped onion");
-      WriteLine;
+      WriteLine("Good Things in here!!!");
       WriteLine("Mix ingredients together.");
       WriteLine("Chill and serve with chips.");
    }

@@ -47,6 +47,10 @@
     <Compile Include="DebugOne2.cs" />
     <Compile Include="DebugOne3.cs" />
     <Compile Include="DebugOne4.cs" />
+    <Compile Include="DebugTwo1.cs" />
+    <Compile Include="DebugTwo2.cs" />
+    <Compile Include="DebugTwo3.cs" />
+    <Compile Include="DebugTwo4.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

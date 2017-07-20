@@ -10,6 +10,8 @@ namespace GuessingGame1
     {
         static void Main(string[] args)
         {
+
+      
             Program p = new Program();
             Random rand = new Random();
 
@@ -21,14 +23,7 @@ namespace GuessingGame1
 
             int.TryParse(numGuess, out realNum);
 
-            //while (realNum < 0 || realNum > 6)
-            //{
-            //    Console.WriteLine("You must guess between 1 and 5...try again");
-            //    numGuess = Console.ReadLine();
-            //    int.TryParse(numGuess, out realNum);
-            //}
-
-            while (realNum !=rNum)
+            while (realNum !=rNum   )
             {
                 Console.WriteLine($"Your guess of {numGuess} was not the correct #...\n Guess again");
 
