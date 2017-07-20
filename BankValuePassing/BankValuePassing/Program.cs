@@ -19,9 +19,13 @@ namespace BankValuePassing
 
         static void Main()
         {
+           
             IntialBalance = 500;
             Program p = new Program();
             p.Start(IntialBalance);
+            double currBalance;
+            //Console.WriteLine($"Your current balance is {currBalance}");
+            Console.ReadLine();
 
           
         }
@@ -29,18 +33,27 @@ namespace BankValuePassing
 
         public void Start(double startingBalance)
         {
-
-            //double balance = 500;
+            double beginningBalance = 200;
+            double changedTotal;
             Program p = new Program();
 
-            Console.WriteLine($"Your original balance started at{IntialBalance}..your new balance is  \n " +
+            Console.WriteLine($"Your original balance started at{beginningBalance}..your new balance is  \n " +
                  "would you like to do \n 1.Deposit \n 2.Withdraw \n 3.Check Balance");
             int numchoice = Convert.ToInt32(Console.ReadLine());
 
             switch (numchoice)
             {
                 case 1:
-                    p.Deposit(IntialBalance);
+
+                   
+                   // double depReturn;
+                    
+                    p.Deposit(ref beginningBalance);
+                   // Console.WriteLine(IntialBalance);
+                   // changedTotal =  p.Deposit(ref beginningBalance);
+                   // Console.WriteLine($"Your new balance is{changedTotal}");
+                    Console.WriteLine("Whatever!!");
+                  //  holdingBalance;
                     break;
                 case 2:
                     p.Withdraw(IntialBalance);
@@ -62,11 +75,12 @@ namespace BankValuePassing
 
         }
 
-        private void Deposit(double balance)
+        public double Deposit(ref double currBalance)
         {
 
             Program p = new Program();
             double depAmount;
+            //double currBalance = 0;
             Console.WriteLine($"How much would you like to deposit??");
             string dep = Console.ReadLine();
 
@@ -77,16 +91,18 @@ namespace BankValuePassing
                 // Console.WriteLine($" \n what is your withdrawal amount??");
             }
 
-            balance += depAmount;
+            currBalance += depAmount;
             if (depAmount >= 0)
             {
-                Console.WriteLine($"Your new balance is {balance} Dude!!! ");
+                Console.WriteLine($"Your new balance is {currBalance} Dude!!! ");
             }
             else
             {
                 Console.WriteLine("You need to enter a positive amount or beat it!!! ");
             }
-            p.StartAgain();
+
+            return currBalance;
+           // p.StartAgain();
 
 
         }
