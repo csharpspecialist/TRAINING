@@ -9,7 +9,7 @@ namespace BankValuePassing
     class Program
     {
 
-        public static double IntialBalance { get; set; }
+        public static double InitialBalance { get; set; }
         public static double UpdatedBalance { get; set; }
 
         public static double Total { get; set; }
@@ -17,14 +17,14 @@ namespace BankValuePassing
 
 
 
-        static void Main()
+        public static void Main()
         {
            
-            IntialBalance = 500;
+            InitialBalance = 500;
             Program p = new Program();
-            p.Start(IntialBalance);
-            double currBalance;
-            //Console.WriteLine($"Your current balance is {currBalance}");
+            p.Start(InitialBalance);
+
+            Console.WriteLine($"Your current balance is {InitialBalance}");
             Console.ReadLine();
 
           
@@ -33,129 +33,94 @@ namespace BankValuePassing
 
         public void Start(double startingBalance)
         {
-            double beginningBalance = 200;
+            //double starting balance = 200;
             double changedTotal;
+            int numChoice;
             Program p = new Program();
+            Deposits d = new Deposits();
+            Withdrawal w = new Withdrawal();
 
-            Console.WriteLine($"Your original balance started at{beginningBalance}..your new balance is  \n " +
+            Console.WriteLine($"Your balance is ${startingBalance} \n " +
                  "would you like to do \n 1.Deposit \n 2.Withdraw \n 3.Check Balance");
-            int numchoice = Convert.ToInt32(Console.ReadLine());
+            string firstChoice = Console.ReadLine();
 
-            switch (numchoice)
+            int.TryParse(firstChoice, out numChoice);
+
+            switch (numChoice)
             {
-                case 1:
-
-                   
-                   // double depReturn;
+                
+                case 1: 
+                                      
+                    /*this has to be a ref parameter below in line 57!!!
+                    I tried and searched for a long time to get this
+                    to work correctly...finally found that this worked.
+                    calling the d.deposit method this way still takes 
+                    beginning balance in @ $200..this value will change to
+                    a new/diff amt after the user makes a deposit amt inside 
+                    of the d.deposit method. Debug the code to see 
+                    it in action!!!!     */
+                    changedTotal = d.Deposit(ref startingBalance);
+                   // changedTotal = d.Deposit(ref beginningBalance);
+                    Console.WriteLine($"Your new balance( before we take  is that is...)  is  {changedTotal}");
+                    StartAgain(changedTotal);   
+                     
+                    d.DepositAgain(changedTotal);
                     
-                    p.Deposit(ref beginningBalance);
-                   // Console.WriteLine(IntialBalance);
-                   // changedTotal =  p.Deposit(ref beginningBalance);
-                   // Console.WriteLine($"Your new balance is{changedTotal}");
-                    Console.WriteLine("Whatever!!");
-                  //  holdingBalance;
                     break;
                 case 2:
-                    p.Withdraw(IntialBalance);
+                    changedTotal = w.Withdraw(ref startingBalance);
+                    Console.WriteLine($"Your new balance is  {startingBalance}");
+
+                    StartAgain(changedTotal);
+                    //YOU ARE HERE!!!! CREATE WITHDRAW AGAIN METHOD!!!
+                    w.WithdrawAgain(changedTotal);                   
                     break;
                 case 3:
-                    p.CBalance(IntialBalance);
+                    p.CBalance(startingBalance);
                     break;
 
                 default:
+                   
                     Console.WriteLine("You did not choose a valid choice" +
                         "\n Would you like to start use the banking app");
                     string again = Console.ReadLine();
-                    p.StartAgain();
+                   
 
                     Console.ReadKey();
                     break;
-
             }
 
-        }
-
-        public double Deposit(ref double currBalance)
-        {
-
-            Program p = new Program();
-            double depAmount;
-            //double currBalance = 0;
-            Console.WriteLine($"How much would you like to deposit??");
-            string dep = Console.ReadLine();
-
-            while (!double.TryParse(dep, out depAmount) || depAmount < 1)
-            {
-                Console.WriteLine("That's not a valid withdrawal amount \n Please choose a number greater than zero");
-                dep = Console.ReadLine();
-                // Console.WriteLine($" \n what is your withdrawal amount??");
-            }
-
-            currBalance += depAmount;
-            if (depAmount >= 0)
-            {
-                Console.WriteLine($"Your new balance is {currBalance} Dude!!! ");
-            }
-            else
-            {
-                Console.WriteLine("You need to enter a positive amount or beat it!!! ");
-            }
-
-            return currBalance;
-           // p.StartAgain();
-
-
-        }
-
-        private void Withdraw(double balanceAmt)
-        {
-            Program p = new Program();
-            double wAmount;
-            Console.WriteLine($"How much would you like to withdraw??");
-            string withdrawal = Console.ReadLine();
-
-
-
-            while (!double.TryParse(withdrawal, out wAmount) || wAmount < 1)
-            {
-                Console.WriteLine("That's not a valid withdrawal amount \n Please choose a number greater than zero");
-                withdrawal = Console.ReadLine();
-                // Console.WriteLine($" \n what is your withdrawal amount??");
-            }
-
-            UpdatedBalance = IntialBalance - wAmount;
-            if (wAmount >= 0)
-            {
-                Console.WriteLine($"Your new balance is {UpdatedBalance}...We thought you knew!!! ");
-            }
-            else
-            {
-                Console.WriteLine("You need to enter a positive amount or beat it!!! ");
-            }
-            p.StartAgain();
-
-
-        }
+        }      
+               
 
         public void CBalance(double balance)
         {
-            Console.WriteLine($"Your account has {IntialBalance} in it ");
+            Console.WriteLine($"Your account has {InitialBalance} in it ");
             Console.ReadKey();
-        }
+        }        
 
-        public void StartAgain()
+
+        public static void StartAgain(double changedTotal)
         {
             Program p = new Program();
-
-            Console.WriteLine("Would you like to start the banking app over?? " +
+            Deposits d = new Deposits();
+            Withdrawal w = new Withdrawal();
+            int beginAgain;
+            Console.WriteLine("What would you like to do now?? \n " +
+                "1. Deposit" +
+                "2. Withdraw" +
+                "3. Check Balance" +
                 " \n Y or Yes \n N or no");
             string overAns = Console.ReadLine().ToUpper();
+            int.TryParse(overAns, out beginAgain);
 
-            switch (overAns)
+            switch (beginAgain)
             {
-                case "Y":
-                case "YES":
-                    Main();
+                case 1:
+                   d.DepositAgain(changedTotal);
+                    break;
+                case 2:
+                    w.WithdrawAgain(changedTotal);
                     break;
 
 
@@ -166,10 +131,7 @@ namespace BankValuePassing
             }
 
 
-
-
         }
-
 
 
     }
