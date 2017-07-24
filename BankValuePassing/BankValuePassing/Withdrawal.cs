@@ -27,7 +27,7 @@ namespace BankValuePassing
             }
 
             wBalance -= wAmount;
-            if (wAmount >= 0)
+            if (wAmount > 0)
             {
                 Console.WriteLine($"Your new balance is {wBalance}...We thought you knew!!! ");
             }
@@ -39,20 +39,58 @@ namespace BankValuePassing
 
         }
 
-        public double WithdrawAgain(double changedTotal)
-
+        public void WithdrawAgain(double changedTotal)
         {
-            double nice = 0;
-            Console.WriteLine("We r here now");
-            return nice;
+            Program p = new Program();
+            double wAmount;
+            WriteLine($"You have {changedTotal} currently in your account \n How much would you like to Withdraw??");
+
+            string dep = Console.ReadLine();
+
+            while (!double.TryParse(dep, out wAmount) || wAmount < 1)
+            {
+                Console.WriteLine("That's not a valid withdrawal amount \n Please choose a number greater than zero");
+                dep = Console.ReadLine();
+
+            }
+
+            changedTotal -= wAmount;
+            if (wAmount > 0)
+            {
+                Console.WriteLine($"Your new balance is {changedTotal} Dude!!! ");
+            }
+            else
+            {
+                Console.WriteLine("You need to enter a positive amount or beat it!!! ");
+            }
+
+            Console.WriteLine("Would U like to make another withdrawal?? \n Y or Yes \n M to return to the main menu or \n  press Q to quit the program");
+
+            string wAnsw = Console.ReadLine().ToUpper();
+
+            if (wAnsw == "Y" || wAnsw == "YES")
+            {
+                WithdrawAgain(changedTotal);
+            }
+            else if (wAnsw == "M" || wAnsw == "MAIN")
+            {
+                Program.StartAgain(changedTotal);
+            }
+            else
+            {
+                Console.WriteLine("Thanks for using our program...press any key to exit.");
+                Console.ReadLine();
+                Environment.Exit(0);
+            }
+
+
+
+
+
+
+
+
         }
-
-
-
-
-
-
-
 
     }
 }

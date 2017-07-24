@@ -62,18 +62,18 @@ namespace BankValuePassing
                     changedTotal = d.Deposit(ref startingBalance);
                    // changedTotal = d.Deposit(ref beginningBalance);
                     Console.WriteLine($"Your new balance( before we take  is that is...)  is  {changedTotal}");
-                    StartAgain(changedTotal);   
-                     
-                    d.DepositAgain(changedTotal);
-                    
+                    StartAgain(changedTotal);
+
+                    // d.DepositAgain(changedTotal);
+                    StartAgain(changedTotal);
                     break;
                 case 2:
                     changedTotal = w.Withdraw(ref startingBalance);
                     Console.WriteLine($"Your new balance is  {startingBalance}");
 
                     StartAgain(changedTotal);
-                    //YOU ARE HERE!!!! CREATE WITHDRAW AGAIN METHOD!!!
-                    w.WithdrawAgain(changedTotal);                   
+                     
+                    StartAgain(changedTotal);   
                     break;
                 case 3:
                     p.CBalance(startingBalance);
@@ -106,11 +106,11 @@ namespace BankValuePassing
             Deposits d = new Deposits();
             Withdrawal w = new Withdrawal();
             int beginAgain;
-            Console.WriteLine("What would you like to do now?? \n " +
-                "1. Deposit" +
-                "2. Withdraw" +
-                "3. Check Balance" +
-                " \n Y or Yes \n N or no");
+            Console.WriteLine("What would you like to do now?? \n" +
+                "1. Deposit \n" +
+                "2. Withdrawal \n" +
+                "3. Check Account Balance \n" +
+                "4. End the program");
             string overAns = Console.ReadLine().ToUpper();
             int.TryParse(overAns, out beginAgain);
 
@@ -122,11 +122,16 @@ namespace BankValuePassing
                 case 2:
                     w.WithdrawAgain(changedTotal);
                     break;
+                case 3:
+                    p.CBalance(changedTotal);
+                    break;
 
 
                 default:
                     Console.WriteLine("Thanks for using our application");
                     Console.WriteLine("Have a nice day...\n Press any Key to continue");
+                    Console.ReadLine();
+                    Environment.Exit(0);
                     break;
             }
 

@@ -20,13 +20,13 @@ namespace BankValuePassing
 
             while (!double.TryParse(dep, out depAmount) || depAmount < 1)
             {
-                Console.WriteLine("That's not a valid withdrawal amount \n Please choose a number greater than zero");
+                Console.WriteLine("That's not a valid deposit amount \n Please choose a number greater than zero");
                 dep = Console.ReadLine();
                 // Console.WriteLine($" \n what is your withdrawal amount??");
             }
 
             currBalance += depAmount;
-            if (depAmount >= 0)
+            if (depAmount > 0)
             {
                 Console.WriteLine($"Your new balance is {currBalance} Dude!!! ");
             }
@@ -65,7 +65,7 @@ namespace BankValuePassing
             {
                 Console.WriteLine("You need to enter a positive amount or beat it!!! ");
             }
-
+           // Program.StartAgain(changedTotal);
             Console.WriteLine("Would U like to make another deposit?? \n Y or Yes \n M to return to the main menu or \n  press Q to quit the program");
 
             string depAnsw = Console.ReadLine().ToUpper();
@@ -76,11 +76,12 @@ namespace BankValuePassing
             }
             else if (depAnsw == "M" || depAnsw == "MAIN")
             {
-                p.Start(changedTotal);               
+                Program.StartAgain(changedTotal);               
             }else
             {
                 Console.WriteLine("Thanks for using our program...press any key to exit.");
                 Console.ReadLine();
+                Environment.Exit(0);
             }
 
 
