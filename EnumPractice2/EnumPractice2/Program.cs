@@ -18,6 +18,7 @@ namespace EnumPractice2
 
         static void Main(string[] args)
         {
+            
             int BChoice;
             Console.WriteLine("Which burger is your favorite \n 1. Whopper \n 2. Big Mac \n 3. Wendy's Single");
             string sandwich = Console.ReadLine();

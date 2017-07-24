@@ -12,11 +12,18 @@ namespace GuessingGame
         {
 
             Program p = new Program();
+
+
             // Random rnd = new Random();
             Vacation v = new Vacation();
             Console.WriteLine("Hello world");
             v.Cancun();
+
+
+
             p.Working();
+
+
            Talking();
             v.Cancun();
             v.Bahamas();
