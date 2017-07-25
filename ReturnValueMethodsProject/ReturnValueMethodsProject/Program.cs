@@ -17,7 +17,7 @@ namespace ReturnValueMethodsProject
             Console.WriteLine($"The new value of x in the Main method is {x}");
             Console.ReadLine();
 
-            int score = ReturnValMethod(x);
+            int score = ReturnValMethod(x); //notice we have to store the result inside of a
             Console.WriteLine($"The value of x is now {x} inside the main method \n after returning from the Return Value method");
             Console.ReadLine();
         }
@@ -31,12 +31,13 @@ namespace ReturnValueMethodsProject
 
 
         }
-
+        //this method has a return type of int...new, new, new!!!!
         public static int ReturnValMethod(int x)
         {
             Console.WriteLine($"The initial value of x inside the Ret Value Method is {x}");
-            x += 50;
-            Console.WriteLine($"The new Changed value of x in the Return Ref Method is {x}");
+            int y = 50;
+            x += y;
+            Console.WriteLine($"We added {y} to {x} & now the Changed value of x in the Return Ref Method is {x}");
             return x;
         }
 

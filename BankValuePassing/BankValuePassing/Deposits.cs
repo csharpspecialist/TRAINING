@@ -83,19 +83,10 @@ namespace BankValuePassing
                 Console.ReadLine();
                 Environment.Exit(0);
             }
-
-
-
-
-
+            
 
         }
-
-
-
-
-
-
+        
 
     }
 }
