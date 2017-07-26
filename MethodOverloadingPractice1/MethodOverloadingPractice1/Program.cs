@@ -28,18 +28,12 @@ namespace MethodOverloadingPractice1
 
             int.TryParse(firstNum, out firstRealNumber);
             int.TryParse(secondNum, out secondRealNumber);
-            double.TryParse(secondDouble, out firstDouble);
-
-
-            MultiplyIntegers();
+            double.TryParse(secondDouble, out firstDouble);                    
 
 
             MultiplyIntegers(firstRealNumber);
-            MultiplyIntegers();
-
-            MultiplyIntegers();
-
-
+            MultiplyIntegers();         
+            
 
             MultiplyIntegers(firstRealNumber, secondRealNumber);
 
@@ -51,7 +45,6 @@ namespace MethodOverloadingPractice1
             int number1 = 0 ;
             Console.WriteLine($"The first realnumber is here {number1} with no integers");
             Console.ReadLine();
-
 
         }
 
