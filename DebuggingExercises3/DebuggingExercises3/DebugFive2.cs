@@ -4,7 +4,7 @@
 using static System.Console;
 class DebugFive2
 {
-   static void FiveTwo()
+   public static void FiveTwo()
    {
       const string ITEM209 = "209";
       const string ITEM312 = "312";
@@ -14,7 +14,7 @@ class DebugFive2
       string stockNum;
       Write("Please enter the stock number of the item you want ");
       stockNum = ReadLine();
-      while(stockNum != ITEM209 || stockNum != ITEM312 || stockNum != ITEM414)
+      while(stockNum != ITEM209 && stockNum != ITEM312 && stockNum != ITEM414)
       {
          WriteLine("Invalid stock number. Please enter again. ");
          stockNum = ReadLine();//readline

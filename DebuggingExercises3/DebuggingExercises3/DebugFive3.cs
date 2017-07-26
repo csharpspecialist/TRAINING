@@ -5,19 +5,24 @@
 using static System.Console;
 class DebugFive3
 {
-   static void FiveThree()
+   public static void FiveThree()
    {
       char letter;
-      int number;
+      int number = 0;
       const int LOW = 0;
       const int HIGH = 99;
       const int NUMINROW = 20;
-      for(letter = 'A'; letter < 'Z'; ++letter)
-        for(number = LOW; number > HIGH; ++number)
+        for (letter = 'A'; letter < 'Z'; ++letter)
+        { 
+        for(number = LOW; number < HIGH; ++number)
         {
            if(number == NUMINROW) //change numinrow0 to numinrow + % to ==
               WriteLine();
-           Write("{0}{{1} ", letter, number.ToString("D2"));
+                Write($"{letter}, {number.ToString()} ");
+            }
+            
         }
+
+        ReadLine();
    }
 }

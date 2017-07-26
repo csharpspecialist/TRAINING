@@ -10,7 +10,11 @@ namespace DebuggingExercises3
     {
         static void Main(string[] args)
         {
-            DebugFive1.FiveOne();
+            //  DebugFive1.FiveOne();
+            // DebugFive2.FiveTwo();
+            DebugFive3.FiveThree();
+            //DebugFive4.FiveFour();
+
         }
     }
 }
