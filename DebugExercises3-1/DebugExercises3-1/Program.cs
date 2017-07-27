@@ -17,9 +17,13 @@ namespace DebugExercises3_1
 
             //DebugFive1.FiveOne();
             //DebugFive2.FiveTwo();
-             //DebugFive3.FiveThree();
+            //DebugFive3.FiveThree();
             //Debug33.ThirtyThree();
+            //DebugFive4.FiveFour();
 
+            //DebugSix01.SixOne();
+
+            DebugSix02.SixTwo();
         }
     }
 }
