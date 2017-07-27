@@ -11,10 +11,12 @@ class DebugSix02
 
       Write("\nThe numbers are...");
 
-      for(x = 0; x < numbers.Length; ++x)
-         Write("{0, 6}", numbers[x]);
-      WriteLine();
-              
+        for (x = 0; x < numbers.Length; ++x)
+        
+            Write("{0, 6}", numbers[x]);
+
+            WriteLine();
+          
       for(x = 0; x < numbers.Length; ++x)
       {
          total += numbers[x];
