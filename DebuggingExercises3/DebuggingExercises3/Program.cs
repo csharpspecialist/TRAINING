@@ -12,8 +12,10 @@ namespace DebuggingExercises3
         {
             //  DebugFive1.FiveOne();
             // DebugFive2.FiveTwo();
-            DebugFive3.FiveThree();
-            //DebugFive4.FiveFour();
+            //DebugFive3.FiveThree();
+            // DebugFive4.FiveFour();
+            // DebugSix01.SixOne();
+            DebugSix02.SixTwoMain();
 
         }
     }

@@ -47,6 +47,8 @@
     <Compile Include="DebugFive2.cs" />
     <Compile Include="DebugFive3.cs" />
     <Compile Include="DebugFive4.cs" />
+    <Compile Include="DebugSix01.cs" />
+    <Compile Include="DebugSix02.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
