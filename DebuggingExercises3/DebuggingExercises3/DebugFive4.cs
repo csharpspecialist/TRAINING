@@ -26,13 +26,13 @@ class DebugFive4
       howMany = Convert.ToInt32(inputString);
       count = 0;
      total = START;
-      while(total == LIMIT) //changed to != from ==
+      while(total < LIMIT) //changed to != from ==
       {
          total = total * 2;   //change = to *=
-           count += 1;                 //count = count + 1;   
+           count ++;                 //count = count + 1;   
         }
       if(howMany >= count)
-         WriteLine("Your guess was too high.");
+         WriteLine($"Your guess of {count} was too high.");
       else
         if(howMany <= count) // change from =< to <=
            WriteLine("Your guess was too low.");
