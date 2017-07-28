@@ -24,13 +24,16 @@ namespace MethodPassingReference1
             Console.ReadLine();
 
         }
+        #region Normal
 
 
         private static void DisplayValueParameter(int x)
         {
+
             x = 1000;
             Console.WriteLine($"We r in the Display Value Parameter Method \n Where x = {x}");            
         }
+        
 
 
         private static void DisplayNewValue(ref int n)
@@ -49,7 +52,7 @@ namespace MethodPassingReference1
         }
 
 
-
+        #endregion
 
     }
 }
