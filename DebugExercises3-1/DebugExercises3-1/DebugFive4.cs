@@ -13,7 +13,7 @@ class DebugFive4
       double total;
       int howMany;
       int count;
-      Write();
+      Write("");
       WriteLine("How many days do you think \n it will take you to reach 1.000.000");
       Write("{0} starting with {1}",
          LIMIT.ToString("C"), START.ToString("C"));
