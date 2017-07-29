@@ -17,7 +17,15 @@ namespace DebuggingExercises3
             // DebugSix01.SixOne();
             // DebugSix02.SixTwoMain();
             // DebugSix03.SixThree();
-            DebugSix04.SixFour();
+             DebugSix04.SixFour();
+            // DebugSeven1.SevenOne();
+            //  DebugSeven2.SevenTwo();
+            // DebugSeven3.SevenThree();
+            // DebugEight1.EightOne();
+           // DebugEight2.EightTwo();
+
+
+
         }
     }
 }
