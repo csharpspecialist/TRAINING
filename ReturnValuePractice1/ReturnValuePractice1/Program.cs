@@ -21,11 +21,13 @@ namespace ReturnValuePractice1
             string ourFavorite = FavoriteFood(favorite1, favorite2);
 
             Console.WriteLine($"Our favorite foods are {favorite1} and {favorite2} put together these are {ourFavorite}");
+
             Console.ReadLine();
 
             int rnumber = FavoriteNumbers(favoriteNum1, favoriteNum2);
 
             Console.WriteLine($"Our favorite numbers together are {favoriteNum1} and {favoriteNum2} put together these are {rnumber}");
+
             Console.ReadLine();
 
         }
