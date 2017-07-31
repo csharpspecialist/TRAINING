@@ -43,11 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DebugEight1.cs" />
+    <Compile Include="DebugEight2.cs" />
     <Compile Include="DebugFive1.cs" />
     <Compile Include="DebugFive2.cs" />
     <Compile Include="DebugFive3.cs" />
     <Compile Include="Debug33.cs" />
     <Compile Include="DebugFive4.cs" />
+    <Compile Include="DebugSeven1.cs" />
+    <Compile Include="DebugSeven2.cs" />
     <Compile Include="DebugSix01.cs" />
     <Compile Include="DebugSix02.cs" />
     <Compile Include="DebugSix03.cs" />
