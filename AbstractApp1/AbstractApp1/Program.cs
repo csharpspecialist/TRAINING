@@ -11,6 +11,13 @@ namespace AbstractApp1
     {
         static void Main(string[] args)
         {
+            Worker w = new Worker();
+
+            w.Ordering();
+
+            Console.ReadLine();
+
+
         }
     }
 
@@ -41,6 +48,7 @@ namespace AbstractApp1
         public override void Ordering() 
         {
             Console.WriteLine("We r working over here");
+
         }
 
         
