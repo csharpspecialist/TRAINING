@@ -21,7 +21,6 @@ namespace InheritancePrac1
 
         }
 
-
     }
     public class FullTimeEmployee : Employee
     {
@@ -33,9 +32,7 @@ namespace InheritancePrac1
             e.PrintFullName();
 
         }
-
-
-
+        
     }
 
 
@@ -43,14 +40,10 @@ namespace InheritancePrac1
     {
         Employee e = new Employee();
         public double HourlyRate;
-        public int PartTimeId;
-
-    
+        public int PartTimeId;    
 
     }
-
-
-
+    
 
     class Program
     {
