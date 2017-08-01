@@ -20,7 +20,7 @@ namespace InheritancePrac1
             Console.WriteLine($"my First name is {FirstName} and my last name is {LastName}");
 
         }
-
+        
     }
     public class FullTimeEmployee : Employee
     {
@@ -30,21 +30,18 @@ namespace InheritancePrac1
         {
             Employee e = new Employee();
             e.PrintFullName();
-
         }
         
     }
-
 
     public class PartTimeEmployee : Employee
     {
         Employee e = new Employee();
         public double HourlyRate;
-        public int PartTimeId;    
+        public int PartTimeId;           
 
     }
     
-
     class Program
     {
         static void Main(string[] args)
@@ -61,7 +58,6 @@ namespace InheritancePrac1
             pa.FirstName = "Mike";
             pa.LastName = "Tyson";
             pa.PrintFullName();
-
 
             Console.ReadLine();
         }

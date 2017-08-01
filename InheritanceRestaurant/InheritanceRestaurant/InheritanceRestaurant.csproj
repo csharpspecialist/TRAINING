@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7A2DEC0F-BBC2-4F42-8C5E-6A2A1FE8120B}</ProjectGuid>
+    <ProjectGuid>{205885ED-9C02-4FC2-96DA-DE0B8DD64FE4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DebugExercises3_1</RootNamespace>
-    <AssemblyName>DebugExercises3-1</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>InheritanceRestaurant</RootNamespace>
+    <AssemblyName>InheritanceRestaurant</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
@@ -43,21 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DebugEight1.cs" />
-    <Compile Include="DebugEight2.cs" />
-    <Compile Include="DebugFive1.cs" />
-    <Compile Include="DebugFive2.cs" />
-    <Compile Include="DebugFive3.cs" />
-    <Compile Include="Debug33.cs" />
-    <Compile Include="DebugFive4.cs" />
-    <Compile Include="DebugSeven1.cs" />
-    <Compile Include="DebugSeven2.cs" />
-    <Compile Include="DebugSix01.cs" />
-    <Compile Include="DebugSix02.cs" />
-    <Compile Include="DebugSix03.cs" />
-    <Compile Include="DebugSix04.cs" />
+    <Compile Include="PapaJohns.cs" />
+    <Compile Include="PizzaHut.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restaurant.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
