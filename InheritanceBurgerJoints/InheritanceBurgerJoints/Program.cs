@@ -41,10 +41,8 @@ namespace InheritanceBurgerJoints
         
         public string BurgerName;
         public string SizeOfFries;
-        public int NuggetsKids;
-        public int NuggetsSmall;
-        public int NuggetsMed;
-        public int NuggetsLarge;
+        public int NuggetCount;
+
         public string DrinkName;
         public string DrinkSize;
      
