@@ -47,6 +47,8 @@ namespace InterfacePrac1
 
             Customer c = new Customer();
             Console.WriteLine("Working over here!!!");
+            c.Print();
+            c.Write();
 
             Console.ReadLine();
 
