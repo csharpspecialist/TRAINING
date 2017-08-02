@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace InterfacePrac1
 {
-
+    //IWork & ICustomer each have 1 class member!!!
+    //declared at namespace level!!!!
+    //outside of any/all classes!!!
+    //so any class inside of namespace can inherit them
     interface ICustomer
     {
         void Print();
@@ -22,7 +25,7 @@ namespace InterfacePrac1
 
 
     //since we inherit from both Icustomer and Iwork
-    //the u must implement all the methods of both Interfaces!!
+    //the u must implement all the methods of both Interfaces (2)!!
     public class Customer : ICustomer, IWork
     {
        public void Print()
