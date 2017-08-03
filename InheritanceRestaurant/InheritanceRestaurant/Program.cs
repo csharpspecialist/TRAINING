@@ -15,6 +15,7 @@ namespace InheritanceRestaurant
             pa.Sauce = "Tomato";
             pa.Pork1 = "Italian Sausage";
             pa.Veg1 = "Mushrooms";
+            
             pa.PrintToppings();
             
 
