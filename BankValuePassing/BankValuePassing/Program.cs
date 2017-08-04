@@ -105,7 +105,9 @@ namespace BankValuePassing
         public void CBalance(double balance)
         {
             Console.WriteLine($"Your account has {InitialBalance} in it ");
-            Console.ReadKey();
+            StartAgain(balance);
+
+            //Console.ReadKey();
 
         }        
 
