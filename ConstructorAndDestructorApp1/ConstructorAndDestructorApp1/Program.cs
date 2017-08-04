@@ -16,6 +16,12 @@ namespace ConstructorAndDestructorApp1
             Professor sn = new Professor(1001, 5000);
             sn.ShowNumbers();
 
+            Student st = new Student();
+            st.Present();
+            st.ShowNumbers();
+
+            Console.ReadLine();
+
             string green = Smash();
             Console.WriteLine(green);
 
