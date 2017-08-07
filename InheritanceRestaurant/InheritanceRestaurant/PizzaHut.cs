@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InheritanceRestaurant
 {
-    public class PizzaHut : Restaurant
+    public class PizzaHut : Restaurant 
     {
 
         public string Bread1;

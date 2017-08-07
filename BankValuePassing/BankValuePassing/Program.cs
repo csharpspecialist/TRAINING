@@ -83,8 +83,17 @@ namespace BankValuePassing
                    
                     Console.WriteLine("You did not choose a valid choice" +
                         "\n Would you like to start use the banking app");
-                    string again = Console.ReadLine();
-                   
+                    string again = Console.ReadLine().ToUpper();
+
+                    if(again == "Y" || again =="YES")
+                    {
+                        Start(startingBalance);
+                    }
+                   else
+                    {
+                        Console.WriteLine("Thanks for using our program \n Press any key to exit");
+                        Console.ReadLine();
+                    }
 
                     Console.ReadKey();
                     break;
@@ -96,7 +105,10 @@ namespace BankValuePassing
         public void CBalance(double balance)
         {
             Console.WriteLine($"Your account has {InitialBalance} in it ");
-            Console.ReadKey();
+            StartAgain(balance);
+
+            //Console.ReadKey();
+
         }        
 
 
