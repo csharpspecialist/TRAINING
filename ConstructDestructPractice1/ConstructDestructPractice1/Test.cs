@@ -9,7 +9,7 @@ namespace ConstructDestructPractice1
     class Test
     {
         
-        private double length = 5;
+       
 
         
         //this is a constructor below...same name as the class itself
