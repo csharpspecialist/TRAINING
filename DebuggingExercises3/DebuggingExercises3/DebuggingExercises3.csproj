@@ -53,6 +53,7 @@
     <Compile Include="DebugFive4.cs" />
     <Compile Include="DebugNine1.cs" />
     <Compile Include="DebugNine2.cs" />
+    <Compile Include="DebugNine4.cs" />
     <Compile Include="DebugSeven1.cs" />
     <Compile Include="DebugSeven2.cs" />
     <Compile Include="DebugSix01.cs" />
