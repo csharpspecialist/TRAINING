@@ -32,7 +32,8 @@ namespace DebugExercises3_1
             //DebugEight3.EightThree();
             // DebugEight4.EightFour();
             // DebugNine1.NineOne();
-           // FixedDebugNine2.NineTwo();
+            // FixedDebugNine2.NineTwo();
+            FixedDebugNine4.NineFour();
         }
     }
 }

@@ -16,7 +16,8 @@ namespace ListPractice1
         public int Year { get; set; }
         public string Color { get; set; }
         //AutoImplemented property
-      
+        public bool ShoeColor { get; set; }
+
 
         private string trimLevel;
 
@@ -26,7 +27,11 @@ namespace ListPractice1
             set { trimLevel = value; }
         }
 
+        public void DisplayItems()
+        {
+            Console.WriteLine($"The Id is {AutoID}, the Model is {Model} and the make is a {Make}");
 
+        }
 
     }
 }

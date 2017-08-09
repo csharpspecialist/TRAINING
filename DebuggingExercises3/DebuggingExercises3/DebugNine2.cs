@@ -33,7 +33,6 @@ class Breakfast
        
     }
 
-
     public Breakfast(string name, double price)
    {
        Name = name; //rev name = Name

@@ -6,10 +6,10 @@
 using static System.Console;
 class FixedDebugNine4
 {
-   static void Main()
+    public static void NineFour()
    {
-      const int STARTINGNUM = 201601;
-      BoatLicense[] license = new BoatLicense[];
+      const int STARTING_NUM = 201601;
+      BoatLicense[] license = new BoatLicense[3];
       int x;
       for(x = 0; x < license.Length; ++x)
       {
@@ -22,13 +22,13 @@ class FixedDebugNine4
       license[0].MotorSizeInHP = 30;
       license[1].MotorSizeInHP = 50;
       license[2].MotorSizeInHP = 100;
-      for(x = 0; x < license.length; ++x)
+      for(x = 0; x < license.Length; ++x)
         Display(license[x]);
    }
    internal static void Display(BoatLicense lic)
    {
       WriteLine("Boat #{0} from {1} has a {2} HP motor.",
-         lic.LicenseNum, lic.State lic.MotorSizeInHP);
+         lic.LicenseNum, lic.State, lic.MotorSizeInHP);
       WriteLine("    The price for the license is {0}\n",
          lic.Price.ToString("C2"));
    }
@@ -50,7 +50,7 @@ class BoatLicense
          }
          set
          {
-            licenseNum = Lic;
+            licenseNum = value;
          }
       }
       public string State
@@ -61,14 +61,14 @@ class BoatLicense
          }
          set
          {
-            State = value;
+            state = value;
          }
       }
       public int MotorSizeInHP
       {
          get
          {
-            return motorSizeInHp;
+            return motorSizeInHP;
          }
          set
          {
