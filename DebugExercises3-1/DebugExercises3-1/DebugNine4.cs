@@ -35,7 +35,8 @@ class FixedDebugNine4
 }
 class BoatLicense
 {
-      public const int HPCUTOFF = 50;
+  
+    public const int HPCUTOFF = 50;
       public const double LOWFEE = 25.00;
       public const double HIGHFEE = 38.00;
       private string licenseNum;
