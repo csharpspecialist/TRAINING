@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleInheritence", "MultipleInheritence\MultipleInheritence.csproj", "{13773989-4109-41CD-A06B-AB6AB151D23B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extra", "Extra\Extra.csproj", "{0EBAA2BF-823E-40B6-8978-34CC8CD3E0EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13773989-4109-41CD-A06B-AB6AB151D23B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13773989-4109-41CD-A06B-AB6AB151D23B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13773989-4109-41CD-A06B-AB6AB151D23B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13773989-4109-41CD-A06B-AB6AB151D23B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EBAA2BF-823E-40B6-8978-34CC8CD3E0EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EBAA2BF-823E-40B6-8978-34CC8CD3E0EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EBAA2BF-823E-40B6-8978-34CC8CD3E0EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EBAA2BF-823E-40B6-8978-34CC8CD3E0EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
