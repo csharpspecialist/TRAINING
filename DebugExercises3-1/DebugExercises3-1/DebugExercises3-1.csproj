@@ -47,6 +47,7 @@
     <Compile Include="DebugEight2.cs" />
     <Compile Include="DebugEight3.cs" />
     <Compile Include="DebugEight4.cs" />
+    <Compile Include="DebugEleven01.cs" />
     <Compile Include="DebugFive1.cs" />
     <Compile Include="DebugFive2.cs" />
     <Compile Include="DebugFive3.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="DebugSix02.cs" />
     <Compile Include="DebugSix03.cs" />
     <Compile Include="DebugSix04.cs" />
+    <Compile Include="DebugTen01.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
