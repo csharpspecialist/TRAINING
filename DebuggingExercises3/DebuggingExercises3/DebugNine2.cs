@@ -8,6 +8,7 @@ class FixedDebugNine2
    {
       Breakfast special = new Breakfast("French toast", 4.99);
         Breakfast words = new Breakfast("Breakfast is the most important meal of the day.");
+        System.Console.WriteLine(special.INFO);
         //Display the info about breakfast
         WriteLine(words.Info);//ch to special
       // then display today's special
@@ -42,6 +43,6 @@ class Breakfast
    public string Name { get; set; } //fixed ;
    public double Price { get; set; } //fixed ;
     public string Info { get; set; }
-    //public string INFO =
-    // "Breakfast is the most important meal of the day.";
+    public string INFO =
+     "Breakfast is the most important meal of the day.";
 }
