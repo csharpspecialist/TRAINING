@@ -113,6 +113,30 @@ namespace ExceptionPractice1
         }
 
 
+        public void NewMethod()
+        {
+
+
+            int[] numbers = { 2, 5, 8, 9 };
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                Console.WriteLine(numbers[i]);
+            }
+            Console.ReadLine();
+
+
+        }
+
+        ~Program()
+        {
+        }
+
+
+
+
+
+       
 
 
     }
