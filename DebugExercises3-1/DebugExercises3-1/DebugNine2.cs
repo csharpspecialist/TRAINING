@@ -26,8 +26,9 @@ class Breakfast
    public Breakfast(string name, double price)
    {
        Name = name;
-       Price = price;
+        price = Price;
    }
    public string Name { get; set; }
    public double Price { get; set; }
+
 }
