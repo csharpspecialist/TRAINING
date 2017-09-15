@@ -36,7 +36,15 @@ namespace DebugExercises3_1
             //FixedDebugNine4.NineFour();
 
             //DebugTen01.TenOne();
-            DebugEleven01.ElevenOne();
+            // DebugEleven01.ElevenOne();
+            // DebugTen03.TenThree();
+            // DebugTen04.TenFour();
+            // DebugEleven02.ElevenTwo();
+            //FDebugEleven03.ElevenThree();
+            //DebugEleven04.ElevenFour();
+
+
+
 
         }
     }
