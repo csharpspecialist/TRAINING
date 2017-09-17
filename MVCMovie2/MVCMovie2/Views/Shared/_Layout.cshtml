@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - My MVC Movie App</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -17,14 +17,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Hero Page", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("MVC Movie", "Index", "Movies", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Party People!!!", "Index", "HelloWorld")</li>
+                    <li>@Html.ActionLink("Hello World", "Index", "HelloWorld")</li>
+                    <li>@Html.ActionLink("Good Page", "Good", "HelloWorld")</li>
+                    <li>@Html.ActionLink("Nice Page", "Nice", "HelloWorld")</li>
+                               
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -34,6 +37,8 @@
         @RenderBody()
         <hr />
         <footer>
+            <button type="button" class="mag" onclick="location.href='@Url.Action("Nice", "HelloWorld")'"> Nice Page </button> |
+            <button type="button" class="mag" onclick="location.href='@Url.Action("Good", "HelloWorld")'"> Good Page </button>
             <p>&copy; @DateTime.Now.DayOfWeek - My ASP.NET Application</p>
         </footer>
     </div>

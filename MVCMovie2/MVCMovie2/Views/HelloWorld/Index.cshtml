@@ -1,6 +1,5 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿
+
 
 @{
     ViewBag.Title = "Hello Index";
@@ -8,4 +7,8 @@
 
 <h2> Hello World Index Page!!!!</h2>
 
-<p>Hello from our View Template!</p>
+<p>Hello from the Hello World page!</p>
+
+
+<button type="button" class="mag" onclick="location.href='@Url.Action("Nice", "HelloWorld")'"> Nice Page </button>
+
