@@ -21,8 +21,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    @Html.ActionLink("StartPage", "Index", "Start");
-                    @Html.ActionLink("Whats Up", "What", "Start");
+                  <li> @Html.ActionLink("StartPage", "Index", "Start");  </li> 
+                    <li>   @Html.ActionLink("Whats Up", "What", "Start"); </li> 
                 </ul>
             </div>
         </div>
@@ -32,7 +32,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <button type="button" class="mag" onclick="location.href='/start/What'"> What Page </button>  
+            <button type="button" class="mag" onclick="location.href='@Url.Action("What", "Start")'"> What Page </button> | | <button type="button" class="mag" onclick="location.href='@Url.Action("Index", "Start")'"> Nice Page </button> |
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
