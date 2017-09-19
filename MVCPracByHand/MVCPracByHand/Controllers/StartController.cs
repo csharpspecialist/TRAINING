@@ -21,5 +21,18 @@ namespace MVCPracByHand.Controllers
             return View();
         }
 
+
+        public ActionResult CarShow()
+        {
+            return View();
+        }
+
+        public ActionResult Auto()
+        {
+            return View();
+        }
+
+
+
     }
 }
