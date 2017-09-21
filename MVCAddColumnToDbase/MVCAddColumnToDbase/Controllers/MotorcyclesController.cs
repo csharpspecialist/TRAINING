@@ -20,21 +20,51 @@ namespace MVCAddColumnToDbase.Controllers
         //    return View(db.Bikes.ToList());
         //}
 
-        public ActionResult Index(string searchString)
+        //public ActionResult Index(string searchString)
+        //{
+        //    var movies = from m in db.Bikes
+        //                 select m;
+
+        //    if (!String.IsNullOrEmpty(searchString))
+        //    {
+        //        movies = movies.Where(s => s.Manufacturer.Contains(searchString));
+        //    }
+
+        //    return View(movies);
+        //}
+
+            public ActionResult Hiding()
         {
+
+            return View();
+        }
+
+        public ActionResult Index(string bikeGenre, string searchString)
+        {
+            var GenreLst = new List<string>();
+
+            var GenreQry = from d in db.Bikes
+                           orderby d.Manufacturer
+                           select d.Manufacturer;
+
+            GenreLst.AddRange(GenreQry.Distinct());
+            ViewBag.bikeGenre = new SelectList(GenreLst);
+
             var movies = from m in db.Bikes
                          select m;
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                movies = movies.Where(s => s.Manufacturer.Contains(searchString));
+                movies = movies.Where(s => s.Style.Contains(searchString));
+            }
+
+            if (!string.IsNullOrEmpty(bikeGenre))
+            {
+                movies = movies.Where(x => x.Style == bikeGenre);
             }
 
             return View(movies);
         }
-
-
-
 
 
         // GET: Motorcycles/Details/5
