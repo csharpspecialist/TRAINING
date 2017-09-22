@@ -39,17 +39,8 @@ namespace MVCAddColumnToDbase.Controllers
             return View();
         }
 
-        public ActionResult Index(string bikeGenre, string searchString)
+        public ActionResult Index(string searchString)
         {
-            var GenreLst = new List<string>();
-
-            var GenreQry = from d in db.Bikes
-                           orderby d.Manufacturer
-                           select d.Manufacturer;
-
-            GenreLst.AddRange(GenreQry.Distinct());
-            ViewBag.bikeGenre = new SelectList(GenreLst);
-
             var movies = from m in db.Bikes
                          select m;
 
@@ -58,13 +49,39 @@ namespace MVCAddColumnToDbase.Controllers
                 movies = movies.Where(s => s.Style.Contains(searchString));
             }
 
-            if (!string.IsNullOrEmpty(bikeGenre))
-            {
-                movies = movies.Where(x => x.Style == bikeGenre);
-            }
-
             return View(movies);
         }
+
+
+
+
+
+        //public ActionResult Index(string bikeGenre, string searchString)
+        //{
+        //    var GenreLst = new List<string>();
+
+        //    var GenreQry = from d in db.Bikes
+        //                   orderby d.Manufacturer
+        //                   select d.Manufacturer;
+
+        //    GenreLst.AddRange(GenreQry.Distinct());
+        //    ViewBag.bikeGenre = new SelectList(GenreLst);
+
+        //    var movies = from m in db.Bikes
+        //                 select m;
+
+        //    if (!String.IsNullOrEmpty(searchString))
+        //    {
+        //        movies = movies.Where(s => s.Style.Contains(searchString));
+        //    }
+
+        //    if (!string.IsNullOrEmpty(bikeGenre))
+        //    {
+        //        movies = movies.Where(x => x.Style == bikeGenre);
+        //    }
+
+        //    return View(movies);
+        //}
 
 
         // GET: Motorcycles/Details/5
