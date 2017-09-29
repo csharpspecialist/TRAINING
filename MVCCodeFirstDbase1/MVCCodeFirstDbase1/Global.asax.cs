@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace MVCDbaseFirstFreeHand
+namespace MVCCodeFirstDbase1
 {
     public class MvcApplication : System.Web.HttpApplication
     {
