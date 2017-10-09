@@ -123,5 +123,14 @@ namespace MVCTest2.Controllers
             }
             base.Dispose(disposing);
         }
+
+        //public ActionResult Listing(int? id)
+        //{
+        //    return View(auto);
+        //}
+
+
+
+
     }
 }
