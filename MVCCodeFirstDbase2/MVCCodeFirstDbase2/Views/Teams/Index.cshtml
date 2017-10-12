@@ -49,3 +49,22 @@
 }
 
 </table>
+
+You are using @Request.Browser.Browser, and that's OK support@mvcAtm
+or tweet @@mvcATm
+
+
+@helper formatAmount(decimal amount)
+    {
+
+    var color = "green";
+
+    if (amount < 0)
+    {
+        color = "red";
+    }
+
+    <span style="color: @color"> @String.Format("{o:c}")    </span>
+
+}
+
