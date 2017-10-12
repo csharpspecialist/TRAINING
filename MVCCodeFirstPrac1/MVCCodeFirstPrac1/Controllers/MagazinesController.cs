@@ -6,111 +6,111 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using MVCTest2.Models;
+using MVCCodeFirstPrac1.Models;
 
-namespace MVCTest2.Controllers
+namespace MVCCodeFirstPrac1.Controllers
 {
-    public class AutoesController : Controller
+    public class MagazinesController : Controller
     {
-        private AutoDBContext db = new AutoDBContext();
+        private MagazineDBContext db = new MagazineDBContext();
 
-        // GET: Autoes
+        // GET: Magazines
         public ActionResult Index()
         {
-            return View(db.Autos.ToList());
+            return View(db.Mags.ToList());
         }
 
-        // GET: Autoes/Details/5
+        // GET: Magazines/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Auto auto = db.Autos.Find(id);
-            if (auto == null)
+            Magazine magazine = db.Mags.Find(id);
+            if (magazine == null)
             {
                 return HttpNotFound();
             }
-            return View(auto);
+            return View(magazine);
         }
 
-        // GET: Autoes/Create
+        // GET: Magazines/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Autoes/Create
+        // POST: Magazines/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Make,Year,Model,Color")] Auto auto)
+        public ActionResult Create([Bind(Include = "ID,Title,ISBN,Genre,Price")] Magazine magazine)
         {
             if (ModelState.IsValid)
             {
-                db.Autos.Add(auto);
+                db.Mags.Add(magazine);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(auto);
+            return View(magazine);
         }
 
-        // GET: Autoes/Edit/5
+        // GET: Magazines/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Auto auto = db.Autos.Find(id);
-            if (auto == null)
+            Magazine magazine = db.Mags.Find(id);
+            if (magazine == null)
             {
                 return HttpNotFound();
             }
-            return View(auto);
+            return View(magazine);
         }
 
-        // POST: Autoes/Edit/5
+        // POST: Magazines/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Make,Year,Model,Color")] Auto auto)
+        public ActionResult Edit([Bind(Include = "ID,Title,ISBN,Genre,Price")] Magazine magazine)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(auto).State = EntityState.Modified;
+                db.Entry(magazine).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(auto);
+            return View(magazine);
         }
 
-        // GET: Autoes/Delete/5
+        // GET: Magazines/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Auto auto = db.Autos.Find(id);
-            if (auto == null)
+            Magazine magazine = db.Mags.Find(id);
+            if (magazine == null)
             {
                 return HttpNotFound();
             }
-            return View(auto);
+            return View(magazine);
         }
 
-        // POST: Autoes/Delete/5
+        // POST: Magazines/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Auto auto = db.Autos.Find(id);
-            db.Autos.Remove(auto);
+            Magazine magazine = db.Mags.Find(id);
+            db.Mags.Remove(magazine);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -124,13 +124,23 @@ namespace MVCTest2.Controllers
             base.Dispose(disposing);
         }
 
-        //public ActionResult Listing(int? id)
-        //{
-        //    return View(auto);
-        //}
+
+        public ActionResult Fast()
+        {
+            return View();
+        }
+
+        public ActionResult Smile()
+        {
+            int x = 10;
+            if(x == 10)
+            {
+                return RedirectToAction("Index");
+            }
 
 
-
+            return View();
+        }
 
     }
 }
