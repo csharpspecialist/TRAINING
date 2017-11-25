@@ -17,23 +17,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("StartPage", "Index", "Start", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Customer List", "Index", "Customers", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                  <li> @Html.ActionLink("StartPage", "Index", "Start");  </li> 
-                    <li>   @Html.ActionLink("Whats Up", "What", "Start"); </li> 
+                    <li>@Html.ActionLink("Search Page","List","Customers")   </li>
+
                 </ul>
             </div>
         </div>
     </div>
 
-    <div class="container body-content">
+    <div class="container body-content glare">
         @RenderBody()
         <hr />
-        <footer>
-            <button type="button" class="mag" onclick="location.href='@Url.Action("What", "Start")'"> What Page </button> | | <button type="button" class="mag" onclick="location.href='@Url.Action("Index", "Start")'"> Nice Page </button> |
-            <p>&copy; @DateTime.Now.Year -The Jerico Project!!!</p>
+        <footer class="paint">
+            <p>&copy; @DateTime.Now.Year - Elite Business Solutions</p>
         </footer>
     </div>
 
