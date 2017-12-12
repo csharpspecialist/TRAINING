@@ -20,7 +20,7 @@ namespace EnumPractice1
 
     }
 
-    enum 
+  
 
 
     class Program
