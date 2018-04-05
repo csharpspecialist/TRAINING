@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Page";
+}
+
+<h2>Page To be named later</h2>
+
+<button id="btn"> Action Button</button>
+
+<div id="sporty">   </div>
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<script> 
+
+    $('#btn').click(function () {
+        var url = "/Novels/Showoff";
+        $.get(url, null, function (clue) {
+            $("#sporty").html(clue);
+        })
+
+    });
+
+
+
+   </script>
+
