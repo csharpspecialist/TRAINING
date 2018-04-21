@@ -1,0 +1,50 @@
+﻿@model MVCCodeFirst2.Models.Drinks
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Drinks</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DrinkName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DrinkName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DrinkGlass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DrinkGlass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DrinkGenre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DrinkGenre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DrinkID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

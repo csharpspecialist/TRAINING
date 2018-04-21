@@ -15,8 +15,8 @@ namespace ExceptionPractice1
             int mpg;
 
             Program p = new Program();
-            p.StringError();
-            p.NewError();
+           // p.StringError();
+           // p.NewError();
             p.ArrayError();
      
             try
